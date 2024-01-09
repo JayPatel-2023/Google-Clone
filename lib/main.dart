@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_clone/responsive/mobile_screen_layout.dart';
-import 'package:google_clone/responsive/responsive_layout_screen.dart';
-import 'package:google_clone/responsive/web_screen_layout.dart';
+import 'package:google_clone/screens/search_screen.dart';
 import 'package:google_clone/utils/style.dart';
 
 void main() {
@@ -18,10 +16,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Google Clone',
       theme: kDarkTheme,
-      home: const ResponsiveLayout(
-        mobileScreenLayout: MobileLayout(),
-        webScreenLayout: WebLayout() ,
-      ),
+      // home: const ResponsiveLayout(
+      //   mobileScreenLayout: MobileLayout(),
+      //   webScreenLayout: WebLayout() ,
+      // ),
+      home: const SearchScreen(),
     );
   }
 }

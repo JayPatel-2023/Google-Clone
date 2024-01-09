@@ -19,7 +19,7 @@ class Search extends StatelessWidget {
         ),
         const SizedBox(height: 20),
         SizedBox(
-          width: size.width * 0.4,
+          width: size.width > 768 ? size.width * 0.4 : size.width*0.9,
           height: size.height * 0.07,
           child: TextFormField(
             cursorColor: const Color.fromARGB(255, 11, 84, 144),
