@@ -4,7 +4,7 @@ import 'package:flutter_svg/svg.dart';
 import '../utils/colors.dart';
 import '../widgets/mobile/mobile_footer.dart';
 import '../widgets/search.dart';
-import '../widgets/translation_buttons.dart';
+// ignore: unused_import
 import '../widgets/web/search_buttons.dart';
 
 class MobileLayout extends StatelessWidget {
@@ -91,9 +91,6 @@ class MobileLayout extends StatelessWidget {
                     children: [
                       Search(),
                       SizedBox(height: 20),
-                      SearchButtons(),
-                      SizedBox(height: 20),
-                      TranslationButtons(),
                     ],
                   ),
                   MobileFooter(),
